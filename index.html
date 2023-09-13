@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="agenda.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">HOME PAGE</a></li>
+          <li><a href="#">APPOINTMENTS</a></li>
+          <li><a href="#">OTHER</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>To do list</h1>
+      <form id="things-to-do">
+        <div>
+          <label for="hours-of-study">Study</label>
+          <input id="hours-of-study" required />
+        </div>
+        <div>
+          <label for="gym">Gym time</label>
+          <input id="gym" required />
+        </div>
+        <div>
+          <label for="moment-of-pause">Coffee break</label>
+          <input id="moment-of-pause" type="pause" required />
+        </div>
+        <div>
+          <label for="end-of-the-day">Relax</label>
+          <input id="end-of-the-day" type="end-of-the-day" required />
+        </div>
+        <div>
+          <button type="submit">Save Appointments</button>
+          <button type="reset">Delete Appointments</button>
+        </div>
+      </form>
+    </main>
+    <section>
+      <div id="saved-appointments"></div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
